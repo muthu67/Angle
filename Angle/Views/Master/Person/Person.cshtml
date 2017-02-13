@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Person";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Person</h2>
+<script src="~/Scripts/MasterController/Person/Master1.js"></script>
+<div ng-app="app" class="row">
+    <div ng-controller="StudentController">
+        @*{{message}}
+        {{students}}*@
+        <table class="table">
+            <tr ng-repeat="r in students | filter : searchStudent">
+                <td>{{r.FamilyName}}</td>
+                <td>{{r.GivenName}}</td>
+                <td>{{r.PassportNo}}</td>
+                <td>{{r.PassportID}}</td>
+                </tr>
+                </table>
+                    {{status}}
+    </div>
+</div>
