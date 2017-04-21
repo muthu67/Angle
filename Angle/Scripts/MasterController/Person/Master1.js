@@ -15,8 +15,7 @@
     }
 })
 
-app.factory('StudentService', ['$http', function ($http) {
-    debugger;
+app.factory('StudentService', ['$http', function ($http) {    
     var StudentService = {};
     StudentService.getStudents = function () {
         return $http.get('/Home/GetPesrons');
